@@ -21,43 +21,77 @@
         anxiety/depression
     Wisdom
     Brain stuff
+    relationships
+
 
      -->
 
     <body>
 
-        <!-- Navbar is incorporated in the header and specs are taken straight out of bootstrap
-        Set to stick to the top and have some colorging/margin-bottom
-        The navbar expands out of the hamburger menu after the screen size is large or greater -->
-        <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-5">
-            
-            <h2 class="ml-2 mt-2 bg-success text-white">Love Yourself! You deserve it ❤️️</h2>
+        <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-5">            
+            <h2 class="ml-2 mt-2 bg-success text-white">❤️️ Love Yourself! You deserve it ❤️️</h2>
 
-            <!-- Button is taken straight from bootstrap. it defines the hamburger when screen goes below large size -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- The actual navigation portion of the header is an unordered list, set to collapse on screens smaller than large
-            Margins are set so the navbar will hug the right of the header and left margins are set to adjust to screen size -->
             <nav class="collapse navbar-collapse" id="navbarNav">
                 <ul class="ml-auto mr-3 navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./exercise.html">Exercise/Stretch</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Physical Health
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assets/pages/physical/exercise.html">Exercise</a>
+                            <a class="dropdown-item" href="./assets/pages/physical/stretch.html">Stretch</a>
+                            <a class="dropdown-item" href="./assets/pages/physical/diet.html">Diet</a>
+<!--                             <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="./assets/pages/physical/sleep.html">Sleep</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./diet.html">Diet</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mental Health
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assets/pages/mental/anxiety.html">Anxiety</a>
+                            <a class="dropdown-item" href="./assets/pages/mental/depression.html">Depression</a>
+                        </div>
                     </li>
-                    <!-- The active class helps the user see what page they are on simply by looking at the navbar 
-                    The active class is on a different list item in each html document -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Knowledge
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assets/pages/knowledge/wisdom.html">Wisdom</a>
+                            <a class="dropdown-item" href="./assets/pages/knowledge/motivation.html">Motivation</a>
+                            <a class="dropdown-item" href="./assets/pages/knowledge/brain.html">Brain Science</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Relationships
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./assets/pages/relationships/romance.html">Romantic</a>
+                            <a class="dropdown-item" href="./assets/pages/relationships/friendship.html">Platonic</a>
+                            <a class="dropdown-item" href="./assets/pages/relationships/family.html">Familial</a>
+                        </div>
+                    </li>
+
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="https://pjdip.github.io/self-care/">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="https://pjdip.github.io/Life_Love/">Home<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <div class="container">
+        <main class="container">
             <div class="row">
                 <div class="col">
                     <a target="_blank" style="text-align:center; size:20px;" href="./assets/documents/bitcoin-whitepaper.pdf">Original Bitcoin Whitepaper by Satoshi Nakamoto</a>
@@ -69,7 +103,7 @@
                     <a target="_blank" href="https://www.bloomberg.com/news/articles/2020-09-22/defi-mania-puts-crypto-ahead-of-gold-as-2020-s-top-asset-so-far">Bloomberg - Crypto Is Beating Gold as 2020’s Top Asset So Far</a>
                 </div>
             </div>
-        </div>
+        </main>
 
         <!-- Footer is given some bootstrap utility classes to make it handsome -->
         <footer class="bg-dark text-muted text-center fixed-bottom p-4">
