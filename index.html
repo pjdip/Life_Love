@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Self-Love</title>
+        <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    </head>
+
+<!-- Physical
+        exercise
+            upper
+            core
+            lower
+        stretch
+        diet
+        sleep
+    Mental
+        motivation
+        anxiety/depression
+    Wisdom
+    Brain stuff
+
+     -->
+
+    <body>
+
+        <!-- Navbar is incorporated in the header and specs are taken straight out of bootstrap
+        Set to stick to the top and have some colorging/margin-bottom
+        The navbar expands out of the hamburger menu after the screen size is large or greater -->
+        <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top mb-5">
+            
+            <h2 class="ml-2 mt-2 bg-success text-white">Love Yourself! You deserve it ❤️️</h2>
+
+            <!-- Button is taken straight from bootstrap. it defines the hamburger when screen goes below large size -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- The actual navigation portion of the header is an unordered list, set to collapse on screens smaller than large
+            Margins are set so the navbar will hug the right of the header and left margins are set to adjust to screen size -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="ml-auto mr-3 navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./exercise.html">Exercise/Stretch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./diet.html">Diet</a>
+                    </li>
+                    <!-- The active class helps the user see what page they are on simply by looking at the navbar 
+                    The active class is on a different list item in each html document -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://pjdip.github.io/self-care/">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a target="_blank" style="text-align:center; size:20px;" href="./assets/documents/bitcoin-whitepaper.pdf">Original Bitcoin Whitepaper by Satoshi Nakamoto</a>
+                </div>
+                <div class="col">
+                    <img class="img" src="./assets/images/performance-chart-090420-wide-775x264.webp">
+                </div>
+                <div class="col">
+                    <a target="_blank" href="https://www.bloomberg.com/news/articles/2020-09-22/defi-mania-puts-crypto-ahead-of-gold-as-2020-s-top-asset-so-far">Bloomberg - Crypto Is Beating Gold as 2020’s Top Asset So Far</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer is given some bootstrap utility classes to make it handsome -->
+        <footer class="bg-dark text-muted text-center fixed-bottom p-4">
+            <h4>&copy; Made with ❤️️ by Philip DiPaula</h4>
+        </footer>
+
+        <!-- Javascript necessary to bootstrap functionality is integrated at the end -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script src="./assets/script.js"></script>
+    </body>
+
+</html>
